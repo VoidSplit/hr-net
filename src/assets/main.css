@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500&family=Molengo&family=Yantramanav:wght@300;400;500&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	color: #62676e;
+	font-family: 'Yantramanav', sans-serif;
+}
+
+body {
+	background-color: #ffffff;
+	background-size: 15px 15px;
+	background-image: repeating-linear-gradient(45deg, #d9dfe8 0, #d9dfe8 0.6000000000000001px, #ffffff 0, #ffffff 50%);
+}
+
+.App {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	height: 100%;
+    padding: 15px 35px;
+}
+.fc {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 15px;
+	height: 100%;
+}
+.fr {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.space-max {
+	justify-content: space-between;
+}

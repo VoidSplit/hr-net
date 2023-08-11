@@ -1,0 +1,12 @@
+.field-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.field-wrapper input:focus {
+    outline-style: groove;
+}
+.field-wrapper input[type="text"] {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #d9dfe8;
+    padding: 10px 25px;
+}

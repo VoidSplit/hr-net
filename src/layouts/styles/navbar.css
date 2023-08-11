@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #d9dfe8;
+}
+.navbar .logo {
+    font-size: 1.3rem;
+    background-color: #d9dfe8;
+    padding: 15px 35px;
+}
+.navbar .logo span {
+    font-family: 'Fira Sans', sans-serif;
+}
+.navbar .link {
+    display: flex;
+    gap: 25px;
+    align-self: stretch;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 25px;
+    cursor: pointer;
+}
+.navbar .link a {
+    text-decoration: none;
+    color: #111;
+}

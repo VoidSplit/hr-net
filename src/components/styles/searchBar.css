@@ -1,0 +1,15 @@
+.searchbar-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchbar:focus {
+    outline-style: groove;
+}
+.searchbar {
+    background: #fff;
+    border: 1px solid #d9dfe8;
+    height: 40px;
+    width: 500px;
+    padding: 15px;
+}

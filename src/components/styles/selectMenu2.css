@@ -1,0 +1,93 @@
+.select-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.selectMenu {
+    position: relative;
+    --transition-duration: .2s;
+    --max-rows-showing: 0;
+    z-index: 5;
+}
+.selectMenu:hover {
+    --max-rows-showing: 8;
+}
+.selectMenu .display {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 0 15px 0 25px;
+    border: 1px solid #d9dfe8;
+}
+.selectMenu .display .arrow-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    aspect-ratio: 1;
+}
+.selectMenu:hover .arrow-indicator svg {
+    transform: rotateZ(180deg);
+}
+.selectMenu .arrow-indicator svg {
+    fill: #62676e;
+    transform: rotateZ(0deg);
+    transform-origin: center calc(50% + 2px); /* Detail vertical offset */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: var(--transition-duration) ease-in-out;
+}
+.selectMenu ul {
+    background-color: #d9dfe8;
+    position: absolute;
+    width: 100%;
+    max-height: calc(var(--max-rows-showing)*40px);
+    transition: max-height var(--transition-duration);
+    overflow: hidden auto;
+}
+.selectMenu ul::-webkit-scrollbar {
+    width: 8px;
+    background-color: #e8edf3;
+}
+.selectMenu ul::-webkit-scrollbar-thumb {
+    background-color: #62676e;
+    border-radius: 5px;
+}
+.selectMenu ul::-webkit-scrollbar-button {
+    height: 16px;
+}
+
+.selectMenu ul::-webkit-scrollbar-button:single-button {
+
+    display: block;
+    background-size: 10px;
+    background-repeat: no-repeat;
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    height: 12px;
+    width: 16px;
+    background-position: center 4px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150' fill='rgb(98, 103, 110)'><polygon points='75,00 27,50 125,50'/></svg>");
+}
+::-webkit-scrollbar-button:single-button:vertical:increment {
+    height: 12px;
+    width: 16px;
+    background-position: center 4px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150' fill='rgb(98, 103, 110)'><polygon points='27,00 125,0 75,50'/></svg>")
+}
+.selectMenu ul::-webkit-scrollbar-button:first-child {
+    background-color: pink;
+}
+.selectMenu ul li {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 25px;
+    cursor: pointer;
+}
+
+.selectMenu ul li:hover {
+    background-color: #e8edf3;
+}

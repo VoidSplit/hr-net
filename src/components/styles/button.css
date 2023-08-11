@@ -1,0 +1,16 @@
+.button {
+    --transition-time: .1s;
+    background-color: #62676e;
+    color: #fff;
+    border: 1px solid #d9dfe8;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.02rem;
+    cursor: pointer;
+    transition: background-color var(--transition-time), color var(--transition-time);
+}
+.button:hover {
+    background-color: #d9dfe8;
+    color: inherit;
+}
