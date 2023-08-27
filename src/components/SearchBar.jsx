@@ -5,7 +5,7 @@ export default function SearchBar({id, label}) {
         <>
         <div className="searchbar-wrapper">
             {label && <Label isFor={id} display={label} />}
-            <input type="search" className="searchbar" />
+            <input type="search" id={id} className="searchbar" />
         </div>
         </>
     );

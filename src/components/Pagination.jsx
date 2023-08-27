@@ -3,7 +3,6 @@ export default function Pagination({pages, handleActions}) {
     let activePage = pages.filter(p => p.active === true)[0]
     let previousPage
     let nextPage
-    console.log(activePage)
     if(activePage && activePage.page === 1) {
         pages.length >= 2 ? previousPage = 2 : previousPage = null
         pages.length >= 3 ? nextPage = 3 : nextPage = null
@@ -13,7 +12,6 @@ export default function Pagination({pages, handleActions}) {
     }
 
 
-    console.log(pages, activePage, previousPage, nextPage)
     return (
         <>
         <div className="pagination">

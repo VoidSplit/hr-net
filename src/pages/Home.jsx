@@ -24,16 +24,16 @@ export default function Home() {
             "firstName": firstNameRef.current.value,
             "lastName": lastNameRef.current.value,
             "startDate": startDateRef.current.value,
-            "departement": departementRef.current.dataset.value,
+            "departement": departementRef.current.value,
             "dateOfBirth": dateOfBirthRef.current.value,
             "street": streetRef.current.value,
             "city": cityRef.current.value,
-            "state": stateRef.current.dataset.value,
+            "state": stateRef.current.value,
             "zipCode": zipCodeRef.current.value,
 
             "id": `${Date.now().toString(36)}${Math.random().toString(36).substring(2, 5)}`
         }
-
+        console.log(user)
         store.dispatch(addUser(user))
     };
     return (

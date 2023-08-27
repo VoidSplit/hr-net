@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Navbar from "../layouts/Navbar";
 import Title from "../components/Title";
 import TableLayout from "../layouts/TableLayout";

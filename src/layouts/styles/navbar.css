@@ -12,6 +12,7 @@
 }
 .navbar .logo span {
     font-family: 'Fira Sans', sans-serif;
+    color: #43464b;
 }
 .navbar .link {
     display: flex;

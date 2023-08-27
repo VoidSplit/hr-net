@@ -39,3 +39,9 @@ main {
 .space-max {
 	justify-content: space-between;
 }
+.select-wrap {
+	flex-direction: column;
+}
+.select-wrap input {
+	background-color: #fff;
+}
