@@ -28,7 +28,7 @@ export default function FormElement({ firstNameRef, lastNameRef, dateOfBirthRef,
                         <TextInput innerRef={streetRef} id={"street"} name={"street"} placeholder={""} value={""} label={"Street"} />
                         <TextInput innerRef={cityRef} id={"city"} name={"city"} placeholder={""} value={""} label={"City"} />
                         <div className="select-wrap">
-                            <Label display={"State"}  isFor={"states"}/>
+                            <Label display={"State"} isFor={"states"}/>
                             <SelectMenu innerRef={stateRef} data={states} id="states"/>
                         </div>
                         <NumberInput innerRef={zipCodeRef} id={0} name={"1"} value={"0"} label={"Zip Code"} />
