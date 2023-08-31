@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './assets/main.css';
-import RoutesManager from './utils/routes';
+import RouteManager from './utils/routes';
 import reportWebVitals from './utils/reportWebVitals';
+import './assets/main.css'
+
 
 import { Provider } from 'react-redux'
 import store from "./redux/store";
@@ -11,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <RoutesManager />
+      <RouteManager />
     </Provider>
   </React.StrictMode>
 );

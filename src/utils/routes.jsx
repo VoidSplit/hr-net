@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
-import Home from "../pages/Home";
+import CreateEmployee from "../pages/CreateEmployee";
 import EmployeeList from "../pages/EmployeeList";
 
 export default function RouteManager() {
@@ -8,9 +8,9 @@ export default function RouteManager() {
     <Router>
       <div className="App">
           <Routes>
-            <Route exact path="/" element={ <Home/> }/>
+            <Route exact path="/" element={ <CreateEmployee/> }/>
             <Route exact path="/employee-list" element={ <EmployeeList/> }/>
-            <Route path='*' element={ <Home /> }/>
+            <Route path='*' element={ <CreateEmployee /> }/>
           </Routes>
       </div>
     </Router>

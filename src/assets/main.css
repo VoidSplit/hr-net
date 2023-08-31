@@ -13,35 +13,22 @@ body {
 	background-size: 15px 15px;
 	background-image: repeating-linear-gradient(45deg, #d9dfe8 0, #d9dfe8 0.6000000000000001px, #ffffff 0, #ffffff 50%);
 }
-
-.App {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
+.layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.spaced {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0 50px
 }
 
-main {
-	height: 100%;
-    padding: 15px 35px;
-}
-.fc {
-	display: flex;
-	flex-direction: column;
-	align-items: start;
-	gap: 15px;
-	height: 100%;
-}
-.fr {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-}
-.space-max {
-	justify-content: space-between;
-}
-.select-wrap {
-	flex-direction: column;
-}
-.select-wrap input {
-	background-color: #fff;
+.inbg {
+    background-color: #fff;
+    border: 1px solid #d9dfe8;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }

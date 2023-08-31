@@ -1,10 +1,8 @@
-h1.title {
-    background-color: rgb(255, 255, 255);
+.title {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 25px;
+    background: #fff;
     border: 1px solid #d9dfe8;
-    padding: 10px 25px;
-    width: auto;
-    font-size: 1.5rem;
-}
-h1.title::first-letter {
-    text-transform: capitalize;
+    font-size: 1.3rem;
 }

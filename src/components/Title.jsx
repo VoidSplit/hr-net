@@ -1,8 +1,8 @@
 import './styles/title.css'
-export default function Title({text}) {
+export default function Title({display}) {
     return (
-        <>
-            <h1 className="title">{text}</h1>
-        </>
+        <div className="title">
+            {display}
+        </div>
     );
 };

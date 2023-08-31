@@ -2,7 +2,6 @@ import { CHANGE_ENTRIES, ADD_USER, REMOVE_USER } from './actions';
 
 const initialState = {
     userList: [],
-    entries: 10,
     error: null
 };
 
